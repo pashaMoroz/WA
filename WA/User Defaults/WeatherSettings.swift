@@ -22,9 +22,9 @@ final class WeatherSettings {
             let defaults = UserDefaults.standard
             let key = SettingKey.note.rawValue
 
-            if let token = newValue {
-                print("value: \(token) was added to key \(key)")
-                defaults.set(token, forKey: key)
+            if let note = newValue {
+                print("value: \(note) was added to key \(key)")
+                defaults.set(note, forKey: key)
             } else {
                 defaults.removeObject(forKey: key)
             }
