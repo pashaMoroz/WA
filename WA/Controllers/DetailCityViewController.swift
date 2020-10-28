@@ -98,6 +98,7 @@ class DetailCityViewController: UIViewController {
 
     @objc func noteTextFeildDidChange(_ textField: UITextField) {
 
+        noteLabel.text = noteTextFeild.text
         WeatherSettings.notesForCurrentCity = textField.text!
     }
 
